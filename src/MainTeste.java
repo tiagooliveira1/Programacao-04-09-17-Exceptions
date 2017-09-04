@@ -13,12 +13,11 @@ public class MainTeste {
 		
 		// testa o sacar
 		try {
-			System.out.print(classeATeste.sacar(1000));
+			System.out.print(classeATeste.sacarPoupanca(10000));
 		} catch (SaldoInsuficienteException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 
 }

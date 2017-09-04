@@ -1,6 +1,7 @@
 package opet.aulatds171a.objetos;
 
 import opet.aulatds171a.exceptions.SaldoInsuficienteException;
+import opet.aulatds171a.exceptions.SaldoInsuficientePoupancaException;
 
 public class ClasseA {
 	
@@ -18,6 +19,16 @@ public class ClasseA {
 		if(valor > 1000) 
 		{
 			throw new SaldoInsuficienteException();
+		}
+		
+		return valor;
+			
+	}
+	
+	public double sacarPoupanca(double valor) throws SaldoInsuficientePoupancaException {
+		if(valor > 1000) 
+		{
+			throw new SaldoInsuficientePoupancaException();
 		}
 		
 		return valor;
